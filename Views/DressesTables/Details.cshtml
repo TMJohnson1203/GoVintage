@@ -1,0 +1,66 @@
+﻿@model GoVintage.Models.DressesTable
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>DressesTable</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DressesName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DressesName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DressesPhoto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DressesPhoto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DressesType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DressesType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DressesColor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DressesColor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DressesSeason)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DressesSeason)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DressesOccasion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DressesOccasion)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.DressesID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

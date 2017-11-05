@@ -1,0 +1,72 @@
+﻿@model GoVintage.Models.BottomsTable
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>BottomsTable</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.BottomsName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BottomsName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BottomsPhoto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BottomsPhoto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BottomsType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BottomsType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BottomsColor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BottomsColor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BottomsSeason)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BottomsSeason)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BottomsOccasion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BottomsOccasion)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

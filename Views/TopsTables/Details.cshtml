@@ -1,0 +1,66 @@
+﻿@model GoVintage.Models.TopsTable
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TopsTable</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TopsName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TopsName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TopsPhoto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TopsPhoto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TopsType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TopsType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TopsColor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TopsColor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TopsSeason)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TopsSeason)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TopsOccasion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TopsOccasion)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.TopsID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

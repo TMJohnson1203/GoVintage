@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="VintageWardrobeModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="AccessTable">
+          <Key>
+            <PropertyRef Name="AccessID" />
+          </Key>
+          <Property Name="AccessID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AccessName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="AccessPhoto" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="AccessType" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="AccessColor" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="AccessSeason" Type="varchar" MaxLength="50" />
+          <Property Name="AccessOccasion" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="BottomsTable">
+          <Key>
+            <PropertyRef Name="BottomsID" />
+          </Key>
+          <Property Name="BottomsID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="BottomsName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="BottomsPhoto" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="BottomsType" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="BottomsColor" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="BottomsSeason" Type="varchar" MaxLength="50" />
+          <Property Name="BottomsOccasion" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DressesTable">
+          <Key>
+            <PropertyRef Name="DressesID" />
+          </Key>
+          <Property Name="DressesID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DressesName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="DressesPhoto" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="DressesType" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="DressesColor" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="DressesSeason" Type="varchar" MaxLength="50" />
+          <Property Name="DressesOccasion" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ShoesTable">
+          <Key>
+            <PropertyRef Name="ShoesID" />
+          </Key>
+          <Property Name="ShoesID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ShoesName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="ShoesPhoto" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="ShoesType" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="ShoesColor" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="ShoesSeason" Type="varchar" MaxLength="50" />
+          <Property Name="ShoesOccasion" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SwimTable">
+          <Key>
+            <PropertyRef Name="SwimTableID" />
+          </Key>
+          <Property Name="SwimTableID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SwimName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="SwimPhoto" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="SwimType" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="SwimColor" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="SwimSeason" Type="varchar" MaxLength="50" />
+          <Property Name="SwimOccasion" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TopsTable">
+          <Key>
+            <PropertyRef Name="TopsID" />
+          </Key>
+          <Property Name="TopsID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TopsName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="TopsPhoto" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="TopsType" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="TopsColor" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="TopsSeason" Type="varchar" MaxLength="50" />
+          <Property Name="TopsOccasion" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="VintageWardrobeModelStoreContainer">
+          <EntitySet Name="AccessTable" EntityType="Self.AccessTable" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BottomsTable" EntityType="Self.BottomsTable" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DressesTable" EntityType="Self.DressesTable" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ShoesTable" EntityType="Self.ShoesTable" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SwimTable" EntityType="Self.SwimTable" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TopsTable" EntityType="Self.TopsTable" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="VintageWardrobeModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="AccessTable">
+          <Key>
+            <PropertyRef Name="AccessID" />
+          </Key>
+          <Property Name="AccessID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AccessName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="AccessPhoto" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="AccessType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="AccessColor" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="AccessSeason" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="AccessOccasion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="BottomsTable">
+          <Key>
+            <PropertyRef Name="BottomsID" />
+          </Key>
+          <Property Name="BottomsID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="BottomsName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="BottomsPhoto" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="BottomsType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="BottomsColor" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="BottomsSeason" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="BottomsOccasion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DressesTable">
+          <Key>
+            <PropertyRef Name="DressesID" />
+          </Key>
+          <Property Name="DressesID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DressesName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DressesPhoto" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DressesType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DressesColor" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DressesSeason" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="DressesOccasion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ShoesTable">
+          <Key>
+            <PropertyRef Name="ShoesID" />
+          </Key>
+          <Property Name="ShoesID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ShoesName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ShoesPhoto" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ShoesType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ShoesColor" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ShoesSeason" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ShoesOccasion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SwimTable">
+          <Key>
+            <PropertyRef Name="SwimTableID" />
+          </Key>
+          <Property Name="SwimTableID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SwimName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SwimPhoto" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SwimType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SwimColor" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SwimSeason" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="SwimOccasion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TopsTable">
+          <Key>
+            <PropertyRef Name="TopsID" />
+          </Key>
+          <Property Name="TopsID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TopsName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TopsPhoto" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="TopsType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TopsColor" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TopsSeason" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="TopsOccasion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="VintageWardrobeEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="AccessTables" EntityType="Self.AccessTable" />
+          <EntitySet Name="BottomsTables" EntityType="Self.BottomsTable" />
+          <EntitySet Name="DressesTables" EntityType="Self.DressesTable" />
+          <EntitySet Name="ShoesTables" EntityType="Self.ShoesTable" />
+          <EntitySet Name="SwimTables" EntityType="Self.SwimTable" />
+          <EntitySet Name="TopsTables" EntityType="Self.TopsTable" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="VintageWardrobeModelStoreContainer" CdmEntityContainer="VintageWardrobeEntities">
+          <EntitySetMapping Name="AccessTables">
+            <EntityTypeMapping TypeName="VintageWardrobeModel.AccessTable">
+              <MappingFragment StoreEntitySet="AccessTable">
+                <ScalarProperty Name="AccessID" ColumnName="AccessID" />
+                <ScalarProperty Name="AccessName" ColumnName="AccessName" />
+                <ScalarProperty Name="AccessPhoto" ColumnName="AccessPhoto" />
+                <ScalarProperty Name="AccessType" ColumnName="AccessType" />
+                <ScalarProperty Name="AccessColor" ColumnName="AccessColor" />
+                <ScalarProperty Name="AccessSeason" ColumnName="AccessSeason" />
+                <ScalarProperty Name="AccessOccasion" ColumnName="AccessOccasion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BottomsTables">
+            <EntityTypeMapping TypeName="VintageWardrobeModel.BottomsTable">
+              <MappingFragment StoreEntitySet="BottomsTable">
+                <ScalarProperty Name="BottomsID" ColumnName="BottomsID" />
+                <ScalarProperty Name="BottomsName" ColumnName="BottomsName" />
+                <ScalarProperty Name="BottomsPhoto" ColumnName="BottomsPhoto" />
+                <ScalarProperty Name="BottomsType" ColumnName="BottomsType" />
+                <ScalarProperty Name="BottomsColor" ColumnName="BottomsColor" />
+                <ScalarProperty Name="BottomsSeason" ColumnName="BottomsSeason" />
+                <ScalarProperty Name="BottomsOccasion" ColumnName="BottomsOccasion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DressesTables">
+            <EntityTypeMapping TypeName="VintageWardrobeModel.DressesTable">
+              <MappingFragment StoreEntitySet="DressesTable">
+                <ScalarProperty Name="DressesID" ColumnName="DressesID" />
+                <ScalarProperty Name="DressesName" ColumnName="DressesName" />
+                <ScalarProperty Name="DressesPhoto" ColumnName="DressesPhoto" />
+                <ScalarProperty Name="DressesType" ColumnName="DressesType" />
+                <ScalarProperty Name="DressesColor" ColumnName="DressesColor" />
+                <ScalarProperty Name="DressesSeason" ColumnName="DressesSeason" />
+                <ScalarProperty Name="DressesOccasion" ColumnName="DressesOccasion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ShoesTables">
+            <EntityTypeMapping TypeName="VintageWardrobeModel.ShoesTable">
+              <MappingFragment StoreEntitySet="ShoesTable">
+                <ScalarProperty Name="ShoesID" ColumnName="ShoesID" />
+                <ScalarProperty Name="ShoesName" ColumnName="ShoesName" />
+                <ScalarProperty Name="ShoesPhoto" ColumnName="ShoesPhoto" />
+                <ScalarProperty Name="ShoesType" ColumnName="ShoesType" />
+                <ScalarProperty Name="ShoesColor" ColumnName="ShoesColor" />
+                <ScalarProperty Name="ShoesSeason" ColumnName="ShoesSeason" />
+                <ScalarProperty Name="ShoesOccasion" ColumnName="ShoesOccasion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SwimTables">
+            <EntityTypeMapping TypeName="VintageWardrobeModel.SwimTable">
+              <MappingFragment StoreEntitySet="SwimTable">
+                <ScalarProperty Name="SwimTableID" ColumnName="SwimTableID" />
+                <ScalarProperty Name="SwimName" ColumnName="SwimName" />
+                <ScalarProperty Name="SwimPhoto" ColumnName="SwimPhoto" />
+                <ScalarProperty Name="SwimType" ColumnName="SwimType" />
+                <ScalarProperty Name="SwimColor" ColumnName="SwimColor" />
+                <ScalarProperty Name="SwimSeason" ColumnName="SwimSeason" />
+                <ScalarProperty Name="SwimOccasion" ColumnName="SwimOccasion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TopsTables">
+            <EntityTypeMapping TypeName="VintageWardrobeModel.TopsTable">
+              <MappingFragment StoreEntitySet="TopsTable">
+                <ScalarProperty Name="TopsID" ColumnName="TopsID" />
+                <ScalarProperty Name="TopsName" ColumnName="TopsName" />
+                <ScalarProperty Name="TopsPhoto" ColumnName="TopsPhoto" />
+                <ScalarProperty Name="TopsType" ColumnName="TopsType" />
+                <ScalarProperty Name="TopsColor" ColumnName="TopsColor" />
+                <ScalarProperty Name="TopsSeason" ColumnName="TopsSeason" />
+                <ScalarProperty Name="TopsOccasion" ColumnName="TopsOccasion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

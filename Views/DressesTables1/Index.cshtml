@@ -1,0 +1,63 @@
+﻿@model IEnumerable<GoVintage.Models.DressesTable>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.DressesName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DressesPhoto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DressesType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DressesColor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DressesSeason)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DressesOccasion)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.DressesName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DressesPhoto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DressesType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DressesColor)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DressesSeason)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DressesOccasion)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.DressesID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.DressesID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.DressesID })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="VintageWardrobeModelStoreContainer" CdmEntityContainer="VintageWardrobeEntities">
+    <EntitySetMapping Name="AccessTables">
+      <EntityTypeMapping TypeName="VintageWardrobeModel.AccessTable">
+        <MappingFragment StoreEntitySet="AccessTable">
+          <ScalarProperty Name="AccessID" ColumnName="AccessID" />
+          <ScalarProperty Name="AccessName" ColumnName="AccessName" />
+          <ScalarProperty Name="AccessPhoto" ColumnName="AccessPhoto" />
+          <ScalarProperty Name="AccessType" ColumnName="AccessType" />
+          <ScalarProperty Name="AccessColor" ColumnName="AccessColor" />
+          <ScalarProperty Name="AccessSeason" ColumnName="AccessSeason" />
+          <ScalarProperty Name="AccessOccasion" ColumnName="AccessOccasion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BottomsTables">
+      <EntityTypeMapping TypeName="VintageWardrobeModel.BottomsTable">
+        <MappingFragment StoreEntitySet="BottomsTable">
+          <ScalarProperty Name="BottomsID" ColumnName="BottomsID" />
+          <ScalarProperty Name="BottomsName" ColumnName="BottomsName" />
+          <ScalarProperty Name="BottomsPhoto" ColumnName="BottomsPhoto" />
+          <ScalarProperty Name="BottomsType" ColumnName="BottomsType" />
+          <ScalarProperty Name="BottomsColor" ColumnName="BottomsColor" />
+          <ScalarProperty Name="BottomsSeason" ColumnName="BottomsSeason" />
+          <ScalarProperty Name="BottomsOccasion" ColumnName="BottomsOccasion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DressesTables">
+      <EntityTypeMapping TypeName="VintageWardrobeModel.DressesTable">
+        <MappingFragment StoreEntitySet="DressesTable">
+          <ScalarProperty Name="DressesID" ColumnName="DressesID" />
+          <ScalarProperty Name="DressesName" ColumnName="DressesName" />
+          <ScalarProperty Name="DressesPhoto" ColumnName="DressesPhoto" />
+          <ScalarProperty Name="DressesType" ColumnName="DressesType" />
+          <ScalarProperty Name="DressesColor" ColumnName="DressesColor" />
+          <ScalarProperty Name="DressesSeason" ColumnName="DressesSeason" />
+          <ScalarProperty Name="DressesOccasion" ColumnName="DressesOccasion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ShoesTables">
+      <EntityTypeMapping TypeName="VintageWardrobeModel.ShoesTable">
+        <MappingFragment StoreEntitySet="ShoesTable">
+          <ScalarProperty Name="ShoesID" ColumnName="ShoesID" />
+          <ScalarProperty Name="ShoesName" ColumnName="ShoesName" />
+          <ScalarProperty Name="ShoesPhoto" ColumnName="ShoesPhoto" />
+          <ScalarProperty Name="ShoesType" ColumnName="ShoesType" />
+          <ScalarProperty Name="ShoesColor" ColumnName="ShoesColor" />
+          <ScalarProperty Name="ShoesSeason" ColumnName="ShoesSeason" />
+          <ScalarProperty Name="ShoesOccasion" ColumnName="ShoesOccasion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SwimTables">
+      <EntityTypeMapping TypeName="VintageWardrobeModel.SwimTable">
+        <MappingFragment StoreEntitySet="SwimTable">
+          <ScalarProperty Name="SwimTableID" ColumnName="SwimTableID" />
+          <ScalarProperty Name="SwimName" ColumnName="SwimName" />
+          <ScalarProperty Name="SwimPhoto" ColumnName="SwimPhoto" />
+          <ScalarProperty Name="SwimType" ColumnName="SwimType" />
+          <ScalarProperty Name="SwimColor" ColumnName="SwimColor" />
+          <ScalarProperty Name="SwimSeason" ColumnName="SwimSeason" />
+          <ScalarProperty Name="SwimOccasion" ColumnName="SwimOccasion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TopsTables">
+      <EntityTypeMapping TypeName="VintageWardrobeModel.TopsTable">
+        <MappingFragment StoreEntitySet="TopsTable">
+          <ScalarProperty Name="TopsID" ColumnName="TopsID" />
+          <ScalarProperty Name="TopsName" ColumnName="TopsName" />
+          <ScalarProperty Name="TopsPhoto" ColumnName="TopsPhoto" />
+          <ScalarProperty Name="TopsType" ColumnName="TopsType" />
+          <ScalarProperty Name="TopsColor" ColumnName="TopsColor" />
+          <ScalarProperty Name="TopsSeason" ColumnName="TopsSeason" />
+          <ScalarProperty Name="TopsOccasion" ColumnName="TopsOccasion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

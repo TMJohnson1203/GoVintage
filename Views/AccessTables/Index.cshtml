@@ -1,0 +1,63 @@
+﻿@model IEnumerable<GoVintage.Models.AccessTable>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.AccessName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AccessPhoto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AccessType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AccessColor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AccessSeason)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AccessOccasion)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.AccessName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AccessPhoto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AccessType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AccessColor)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AccessSeason)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AccessOccasion)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.AccessID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.AccessID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.AccessID })
+        </td>
+    </tr>
+}
+
+</table>

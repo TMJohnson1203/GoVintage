@@ -1,0 +1,63 @@
+﻿@model IEnumerable<GoVintage.Models.TopsTable>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TopsName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TopsPhoto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TopsType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TopsColor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TopsSeason)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TopsOccasion)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TopsName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TopsPhoto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TopsType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TopsColor)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TopsSeason)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TopsOccasion)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.TopsID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.TopsID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.TopsID })
+        </td>
+    </tr>
+}
+
+</table>

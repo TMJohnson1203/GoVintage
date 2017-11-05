@@ -1,0 +1,72 @@
+﻿@model GoVintage.Models.AccessTable
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>AccessTable</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AccessName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccessName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AccessPhoto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccessPhoto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AccessType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccessType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AccessColor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccessColor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AccessSeason)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccessSeason)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AccessOccasion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccessOccasion)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

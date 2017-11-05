@@ -1,0 +1,66 @@
+﻿@model GoVintage.Models.BottomsTable
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>BottomsTable</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.BottomsName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BottomsName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BottomsPhoto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BottomsPhoto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BottomsType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BottomsType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BottomsColor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BottomsColor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BottomsSeason)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BottomsSeason)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BottomsOccasion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BottomsOccasion)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.BottomsID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

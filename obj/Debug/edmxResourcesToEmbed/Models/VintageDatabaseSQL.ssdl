@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="VintageWardrobeModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AccessTable">
+    <Key>
+      <PropertyRef Name="AccessID" />
+    </Key>
+    <Property Name="AccessID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AccessName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="AccessPhoto" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AccessType" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="AccessColor" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="AccessSeason" Type="varchar" MaxLength="50" />
+    <Property Name="AccessOccasion" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BottomsTable">
+    <Key>
+      <PropertyRef Name="BottomsID" />
+    </Key>
+    <Property Name="BottomsID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BottomsName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="BottomsPhoto" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="BottomsType" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="BottomsColor" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="BottomsSeason" Type="varchar" MaxLength="50" />
+    <Property Name="BottomsOccasion" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DressesTable">
+    <Key>
+      <PropertyRef Name="DressesID" />
+    </Key>
+    <Property Name="DressesID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DressesName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DressesPhoto" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DressesType" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DressesColor" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DressesSeason" Type="varchar" MaxLength="50" />
+    <Property Name="DressesOccasion" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ShoesTable">
+    <Key>
+      <PropertyRef Name="ShoesID" />
+    </Key>
+    <Property Name="ShoesID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ShoesName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ShoesPhoto" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ShoesType" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ShoesColor" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ShoesSeason" Type="varchar" MaxLength="50" />
+    <Property Name="ShoesOccasion" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SwimTable">
+    <Key>
+      <PropertyRef Name="SwimTableID" />
+    </Key>
+    <Property Name="SwimTableID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SwimName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SwimPhoto" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SwimType" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SwimColor" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SwimSeason" Type="varchar" MaxLength="50" />
+    <Property Name="SwimOccasion" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TopsTable">
+    <Key>
+      <PropertyRef Name="TopsID" />
+    </Key>
+    <Property Name="TopsID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TopsName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TopsPhoto" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="TopsType" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TopsColor" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TopsSeason" Type="varchar" MaxLength="50" />
+    <Property Name="TopsOccasion" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="VintageWardrobeModelStoreContainer">
+    <EntitySet Name="AccessTable" EntityType="Self.AccessTable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BottomsTable" EntityType="Self.BottomsTable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DressesTable" EntityType="Self.DressesTable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ShoesTable" EntityType="Self.ShoesTable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SwimTable" EntityType="Self.SwimTable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TopsTable" EntityType="Self.TopsTable" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

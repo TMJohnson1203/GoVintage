@@ -1,0 +1,72 @@
+﻿@model GoVintage.Models.SwimTable
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>SwimTable</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SwimName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SwimName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SwimPhoto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SwimPhoto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SwimType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SwimType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SwimColor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SwimColor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SwimSeason)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SwimSeason)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SwimOccasion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SwimOccasion)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

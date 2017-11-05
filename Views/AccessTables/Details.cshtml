@@ -1,0 +1,66 @@
+﻿@model GoVintage.Models.AccessTable
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>AccessTable</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AccessName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccessName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AccessPhoto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccessPhoto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AccessType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccessType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AccessColor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccessColor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AccessSeason)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccessSeason)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AccessOccasion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccessOccasion)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.AccessID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
