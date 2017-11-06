@@ -9,7 +9,28 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <div class="caption">
+                    <h3> @Html.DisplayNameFor(model => model.ShoesName)</h3>
+                    <img src="@Html.DisplayFor(modelItem => item.ShoesPhoto)" />
+                    <p>@Html.DisplayNameFor(model => model.ShoesPhoto)</p>
+                </div>
+
+                @Html.ActionLink("Edit", "Edit", new { id = item.ShoesID }) |
+                @Html.ActionLink("Details", "Details", new { id = item.ShoesID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.ShoesID })
+
+            </div>
+        </div>
+    }
+</div>
+
+@*<table class="table">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.ShoesName)
@@ -60,4 +81,4 @@
     </tr>
 }
 
-</table>
+</table>*@

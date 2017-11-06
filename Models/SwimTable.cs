@@ -11,15 +11,23 @@ namespace GoVintage.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations.Schema;
+
     public partial class SwimTable
     {
         public int SwimTableID { get; set; }
+        [Display(Name = "Name")]
         public string SwimName { get; set; }
+        [Display(Name = "Photo")]
         public string SwimPhoto { get; set; }
+        [Display(Name = "Type")]
         public string SwimType { get; set; }
+        [Display(Name = "Color")]
         public string SwimColor { get; set; }
+        [Display(Name = "Season")]
         public string SwimSeason { get; set; }
+        [Display(Name = "Occasion")]
         public string SwimOccasion { get; set; }
     }
 }

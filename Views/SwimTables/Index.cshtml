@@ -4,12 +4,37 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Swim</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <div class="caption">
+                    <h3> @Html.DisplayNameFor(model => model.SwimName)</h3>
+                    <img src="@Html.DisplayFor(modelItem => item.SwimPhoto)" />
+                    <p>@Html.DisplayNameFor(model => model.SwimPhoto)</p>
+                </div>
+
+            @Html.ActionLink("Edit", "Edit", new { id = item.SwimTableID }) |
+            @Html.ActionLink("Details", "Details", new { id = item.SwimTableID }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.SwimTableID })
+
+            </div>
+        </div>
+    }
+</div>
+
+
+
+
+
+@*<table class="table">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.SwimName)
@@ -60,4 +85,4 @@
     </tr>
 }
 
-</table>
+</table>*@

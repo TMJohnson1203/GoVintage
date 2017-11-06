@@ -11,15 +11,23 @@ namespace GoVintage.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations.Schema;
+
     public partial class TopsTable
     {
         public int TopsID { get; set; }
+        [Display(Name = "Name")]
         public string TopsName { get; set; }
+        [Display(Name = "Photo")]
         public string TopsPhoto { get; set; }
+        [Display(Name = "Type")]
         public string TopsType { get; set; }
+        [Display(Name = "Color")]
         public string TopsColor { get; set; }
+        [Display(Name = "Season")]
         public string TopsSeason { get; set; }
+        [Display(Name = "Occasion")]
         public string TopsOccasion { get; set; }
     }
 }

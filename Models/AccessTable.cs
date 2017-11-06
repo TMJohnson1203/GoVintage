@@ -11,15 +11,23 @@ namespace GoVintage.Models
 {
     using System;
     using System.Collections.Generic;
-    
-    public partial class AccessTable
+    using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations.Schema;
+
+        public partial class AccessTable
     {
         public int AccessID { get; set; }
+        [Display(Name = "Name")]
         public string AccessName { get; set; }
+        [Display(Name = "Photo")]
         public string AccessPhoto { get; set; }
+        [Display(Name = "Type")]
         public string AccessType { get; set; }
+        [Display(Name = "Color")]
         public string AccessColor { get; set; }
+        [Display(Name = "Season")]
         public string AccessSeason { get; set; }
+        [Display(Name = "Occasion")]
         public string AccessOccasion { get; set; }
     }
 }

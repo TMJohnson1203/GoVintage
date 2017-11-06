@@ -4,18 +4,50 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
+<h2>Accessory Details</h2>
 
-<div>
-    <h4>AccessTable</h4>
-    <hr />
-    <dl class="dl-horizontal">
+
+<div class="container-fluid accessdetailsrow">
+    <div row="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+           <h3>@Html.DisplayFor(modelItem => Model.AccessName)</h3>
+            <img src="@Html.DisplayFor(modelItem => Model.AccessPhoto)" width="220" height="400"  />
+        </div>
+
+        <div class="detailsection col-xs-6 col-sm-6 col-md-8 col-lg-8">
+            <h3>Details</h3>
+            @Html.DisplayNameFor(model => model.AccessType)
+
+            @Html.DisplayFor(model => model.AccessType)
+
+            @Html.DisplayNameFor(model => model.AccessColor)
+            
+            @Html.DisplayFor(model => model.AccessColor)
+               
+            @Html.DisplayNameFor(model => model.AccessSeason)
+                
+            @Html.DisplayFor(model => model.AccessSeason)
+               
+            @Html.DisplayNameFor(model => model.AccessOccasion)
+               
+            @Html.DisplayFor(model => model.AccessOccasion)
+             
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.AccessID }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+
+</div>
+    
+
+
+@*<dl class="dl-horizontal">
         <dt>
             @Html.DisplayNameFor(model => model.AccessName)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.AccessName)
+            @Html.DisplayFor(model = model.AccessName)
         </dd>
 
         <dt>
@@ -58,9 +90,48 @@
             @Html.DisplayFor(model => model.AccessOccasion)
         </dd>
 
-    </dl>
-</div>
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.AccessID }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>**@<dl class="dl-horizontal">
+    <dt>
+    </dt>
+
+    <dd>
+    </dd>
+
+    <dt>
+    </dt>
+
+    <dd>
+    </dd>
+
+    <dt>
+    </dt>
+
+    <dd>
+    </dd>
+
+    <dt>
+    </dt>
+
+    <dd>
+    </dd>
+
+    <dt>
+    </dt>
+
+    <dd>
+    </dd>
+
+    <dt>
+    </dt>
+
+    <dd>
+    </dd>
+
+</dl>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.AccessID }) |
-    @Html.ActionLink("Back to List", "Index")
 </p>

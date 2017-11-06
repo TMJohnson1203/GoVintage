@@ -77,3 +77,4 @@ c:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\GoVintage\GoVintage\b
 c:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\GoVintage\GoVintage\bin\System.Web.WebPages.Razor.xml
 c:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\GoVintage\GoVintage\obj\Debug\GoVintage.dll
 c:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\GoVintage\GoVintage\obj\Debug\GoVintage.pdb
+c:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\GoVintage\GoVintage\obj\Debug\GoVintage.csprojResolveAssemblyReference.cache
