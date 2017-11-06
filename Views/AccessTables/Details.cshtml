@@ -1,137 +1,116 @@
 ﻿@model GoVintage.Models.AccessTable
-
 @{
     ViewBag.Title = "Details";
 }
 
 <h2>Accessory Details</h2>
 
+<row class="accessdetails col-sm-6 col-md-4">
+                <h3>@Html.DisplayFor(modelItem => Model.AccessName)</h3>
+        <div img src=@Url.Content(Model.AccessPhoto) width="220" height="400" />   
+        <h3>Details</h3>
+            <li>@Html.DisplayNameFor(model => model.AccessType)  :  @Html.DisplayFor(model => model.AccessType)</li>
+            <li>@Html.DisplayNameFor(model => model.AccessColor)  :  @Html.DisplayFor(model => model.AccessColor)</li>
+           <li> @Html.DisplayNameFor(model => model.AccessSeason)  :  @Html.DisplayFor(model => model.AccessSeason)</li>
+           <li> @Html.DisplayNameFor(model => model.AccessOccasion)  :  @Html.DisplayFor(model => model.AccessOccasion)</li>
+ </row>
+            <p>
+                @Html.ActionLink("Edit", "Edit", new { id = Model.AccessID }) |
+                @Html.ActionLink("Back to List", "Index")
+            </p>
 
-<div class="container-fluid accessdetailsrow">
-    <div row="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-           <h3>@Html.DisplayFor(modelItem => Model.AccessName)</h3>
-            <img src="@Html.DisplayFor(modelItem => Model.AccessPhoto)" width="220" height="400"  />
-        </div>
+            @*<dl class="dl-horizontal">
+                     <dt>
+                         @Html.DisplayNameFor(model => model.AccessName)
+                     </dt>
 
-        <div class="detailsection col-xs-6 col-sm-6 col-md-8 col-lg-8">
-            <h3>Details</h3>
-            @Html.DisplayNameFor(model => model.AccessType)
+                     <dd>
+                         @Html.DisplayFor(model = model.AccessName)
+                     </dd>
 
-            @Html.DisplayFor(model => model.AccessType)
+                     <dt>
+                         @Html.DisplayNameFor(model => model.AccessPhoto)
+                     </dt>
 
-            @Html.DisplayNameFor(model => model.AccessColor)
-            
-            @Html.DisplayFor(model => model.AccessColor)
-               
-            @Html.DisplayNameFor(model => model.AccessSeason)
-                
-            @Html.DisplayFor(model => model.AccessSeason)
-               
-            @Html.DisplayNameFor(model => model.AccessOccasion)
-               
-            @Html.DisplayFor(model => model.AccessOccasion)
-             
-    </div>
-    <p>
-        @Html.ActionLink("Edit", "Edit", new { id = Model.AccessID }) |
-        @Html.ActionLink("Back to List", "Index")
-    </p>
+                     <dd>
+                         @Html.DisplayFor(model => model.AccessPhoto)
+                     </dd>
 
-</div>
-    
+                     <dt>
+                         @Html.DisplayNameFor(model => model.AccessType)
+                     </dt>
 
+                     <dd>
+                         @Html.DisplayFor(model => model.AccessType)
+                     </dd>
 
-@*<dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.AccessName)
-        </dt>
+                     <dt>
+                         @Html.DisplayNameFor(model => model.AccessColor)
+                     </dt>
 
-        <dd>
-            @Html.DisplayFor(model = model.AccessName)
-        </dd>
+                     <dd>
+                         @Html.DisplayFor(model => model.AccessColor)
+                     </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.AccessPhoto)
-        </dt>
+                     <dt>
+                         @Html.DisplayNameFor(model => model.AccessSeason)
+                     </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.AccessPhoto)
-        </dd>
+                     <dd>
+                         @Html.DisplayFor(model => model.AccessSeason)
+                     </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.AccessType)
-        </dt>
+                     <dt>
+                         @Html.DisplayNameFor(model => model.AccessOccasion)
+                     </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.AccessType)
-        </dd>
+                     <dd>
+                         @Html.DisplayFor(model => model.AccessOccasion)
+                     </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.AccessColor)
-        </dt>
+                     </dl>
+                 </div>
+                 <p>
+                     @Html.ActionLink("Edit", "Edit", new { id = Model.AccessID }) |
+                     @Html.ActionLink("Back to List", "Index")
+                 </p>*
+                <dl class="dl-horizontal">
+                                 <dt>
+                                 </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.AccessColor)
-        </dd>
+                                 <dd>
+                                 </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.AccessSeason)
-        </dt>
+                                 <dt>
+                                 </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.AccessSeason)
-        </dd>
+                                 <dd>
+                                 </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.AccessOccasion)
-        </dt>
+                                 <dt>
+                                 </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.AccessOccasion)
-        </dd>
+                                 <dd>
+                                 </dd>
 
-        </dl>
-    </div>
-    <p>
-        @Html.ActionLink("Edit", "Edit", new { id = Model.AccessID }) |
-        @Html.ActionLink("Back to List", "Index")
-    </p>**@<dl class="dl-horizontal">
-    <dt>
-    </dt>
+                                 <dt>
+                                 </dt>
 
-    <dd>
-    </dd>
+                                 <dd>
+                                 </dd>
 
-    <dt>
-    </dt>
+                                 <dt>
+                                 </dt>
 
-    <dd>
-    </dd>
+                                 <dd>
+                                 </dd>
 
-    <dt>
-    </dt>
+                                 <dt>
+                                 </dt>
 
-    <dd>
-    </dd>
+                                 <dd>
+                                 </dd>
 
-    <dt>
-    </dt>
-
-    <dd>
-    </dd>
-
-    <dt>
-    </dt>
-
-    <dd>
-    </dd>
-
-    <dt>
-    </dt>
-
-    <dd>
-    </dd>
-
-</dl>
-<p>
-</p>
+                             </dl>
+                             <p>
+                             </p>*@

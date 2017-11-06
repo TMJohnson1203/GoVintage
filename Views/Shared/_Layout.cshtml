@@ -3,17 +3,18 @@
 <html lang="en">
 <head>
 
-    <title>Example of Bootstrap 3 Static Navbar</title>
+    @*<title>Example of Bootstrap 3 Static Navbar</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>*@
+    <link href="~/content/site.css" rel="stylesheet" />
     <title>Bootstrap Thumbnail Carousel with Content</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </head>
 <body>
 
@@ -27,11 +28,11 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="#" class="navbar-brand">Rockabilly Wardrobe</a>
+                <a href="#" class="navbar-brand"><img src="~/content/copy of logowardrobe.png"/></a>
             </div>
             <!-- Collection of nav links and other content for toggling -->
             <div id="navbarCollapse" class="collapse navbar-collapse">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav navbar-right">
                     <li class="active"><a href="#">Dresses</a></li>
                     <li><a href="#">Tops</a></li>
                     <li><a href="#">Bottoms</a></li>
@@ -42,7 +43,7 @@
             </div>
         </nav>
     </div>
-
+    @RenderBody()
     @*Carousel with thumbnails
 
         https://www.tutorialrepublic.com/codelab.php?topic=bootstrap&file=thumbnail-carousel-with-content*@
@@ -192,7 +193,7 @@
         </div>
     </div>
     <div class="container body-content">
-        @RenderBody()
+        @*@RenderBody()*@
         <hr />
         <footer>
             <p>&copy; @DateTime.Now.Year - Teresa M Johnson</p>

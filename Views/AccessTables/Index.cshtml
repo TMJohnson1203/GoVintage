@@ -17,7 +17,7 @@
             <div class="thumbnail">
                 <div class="caption">
                     <h3>@Html.DisplayFor(modelItem => item.AccessName)</h3>
-                    <img src="@Html.DisplayFor(modelItem => item.AccessPhoto)"/>               
+                    <img src="@Url.Content(item.AccessPhoto)" />               
                 </div>
                 <p>@Html.ActionLink("Edit", "Edit", new { id = item.AccessID }) |
                 @Html.ActionLink("Details", "Details", new { id = item.AccessID }) |
@@ -26,6 +26,8 @@
         </div>
     }
 </div>
+
+
 
 
 @*<table class="table">

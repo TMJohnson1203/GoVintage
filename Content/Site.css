@@ -1,6 +1,45 @@
-﻿/*Css sheet for project
+﻿/*/*Css sheet for project*/
 
-body {
+/*layout css. will appear on every page*/
+
+
+.nav.navbar-nav{
+    height: 200px;
+    width: 1200px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+.bs-example{
+    height: 200px;
+    width: 1200px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+
+}
+.navbar-default{
+    height: 200px;
+    width: 1200px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+.navbar-brand{
+    height: 200px;
+    width: 1200px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+.thumbnail{
+height: 350px;
+width: 350px;
+}
+
+
+/*.accessdetails{
+    align-content:center;
+}*/
+
+/*body {
     padding-top: 50px;
     padding-bottom: 20px;
 }*/
