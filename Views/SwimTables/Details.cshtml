@@ -4,62 +4,17 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
+<h1>Details</h1>
 
-<div>
-    <h4>SwimTable</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.SwimName)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.SwimName)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.SwimPhoto)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.SwimPhoto)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.SwimType)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.SwimType)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.SwimColor)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.SwimColor)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.SwimSeason)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.SwimSeason)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.SwimOccasion)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.SwimOccasion)
-        </dd>
-
-    </dl>
-</div>
+<row class="swimdetails col-sm-6 col-md-4">
+    <h1>@Html.DisplayFor(modelItem => Model.SwimName)</h1>
+    <div img src="@Url.Content(Model.SwimPhoto)" width="220" height="400" />
+    <h1>Swim Details</h1>
+    <li>@Html.DisplayNameFor(model => model.SwimType)  :  @Html.DisplayFor(model => model.SwimType)</li>
+    <li>@Html.DisplayNameFor(model => model.SwimColor)  :  @Html.DisplayFor(model => model.SwimColor)</li>
+    <li> @Html.DisplayNameFor(model => model.SwimSeason)  :  @Html.DisplayFor(model => model.SwimSeason)</li>
+    <li> @Html.DisplayNameFor(model => model.SwimOccasion)  :  @Html.DisplayFor(model => model.SwimOccasion)</li>
+</row>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.SwimTableID }) |
     @Html.ActionLink("Back to List", "Index")

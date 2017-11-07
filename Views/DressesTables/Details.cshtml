@@ -4,62 +4,17 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
+<h1>Dress Details</h1>
 
-<div>
-    <h4>DressesTable</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.DressesName)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.DressesName)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.DressesPhoto)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.DressesPhoto)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.DressesType)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.DressesType)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.DressesColor)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.DressesColor)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.DressesSeason)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.DressesSeason)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.DressesOccasion)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.DressesOccasion)
-        </dd>
-
-    </dl>
-</div>
+<row class="dressesdetails col-sm-6 col-md-4">
+    <h1>@Html.DisplayFor(modelItem => Model.DressesName)</h1>
+    <div img src=@Url.Content(Model.DressesPhoto) width="220" height="400" />
+    <h1>Details</h1>
+    <li>@Html.DisplayNameFor(model => model.DressesType)  :  @Html.DisplayFor(model => model.DressesType)</li>
+    <li>@Html.DisplayNameFor(model => model.DressesColor)  :  @Html.DisplayFor(model => model.DressesColor)</li>
+    <li> @Html.DisplayNameFor(model => model.DressesSeason)  :  @Html.DisplayFor(model => model.DressesSeason)</li>
+    <li> @Html.DisplayNameFor(model => model.DressesOccasion)  :  @Html.DisplayFor(model => model.DressesOccasion)</li>
+</row>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.DressesID }) |
     @Html.ActionLink("Back to List", "Index")

@@ -6,7 +6,9 @@ body {
     width: 1200px;
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Spirax', cursive;
+    font-family: 'Zilla Slab', serif;
+    font-family: 'Mystery Quest', cursive;
     font-size: 25px;
     line-height: 2;
     color: #FFFFFF;
@@ -26,7 +28,7 @@ body {
 }
 
 .bs-example {
-    height: 200px;
+    height: 201px;
     width: 1200px;
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
@@ -34,267 +36,159 @@ body {
 }
 
 
-navbar-brand {
+.navbar-brand {
     float: none;
-    /*height: 50px;*/
-    /* padding: 15px 15px; */
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
     font-size: 18px;
     line-height: 20px;
 }
 
-/*.navbar-default{
-    height: 200px;
+#navbarCollapse{
+    height: 201px;
     width: 1200px;
     color: #FFFFFF;
     background-color: #9a0606;
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
-    box-sizing: unset;
 }
 
-.navbar-form{
-    height: 200px;
-    width: 1200px;
+
+
+.nav.navbar-nav.navbar-right{
+    font-size: 18px;
     color: #FFFFFF;
-    background-color: #9a0606;
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-    box-sizing: unset;
-}*/
+    padding: 0px 20px 0px 0px;
+}
 
-
-
-/*.navbar-header{
-    height: 200px;
-    width: 1200px;
+.navbar-default.navbar-nav.li.a {
     color: #FFFFFF;
-    background-color: #9a0606;
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-    box-sizing: unset;
-}
-
-.a.navbar-brand {
-    height: 200px;
-    width: 1200px;
-    color: #FFFFFF;
-    background-color: #9a0606;
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-    box-sizing: unset;
-}
-
-.ul{
-    color: #FFFFFF;
-}
-
-#navbar.Collapse{
-    height: 200px;
-    width: 1200px;
-    color:#FFFFFF;
-    background-color: #9a0606;
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-    box-sizing: unset;
-}
-
-
-.collapse{
-    height: 200px;
-    width: 1200px;
-    color: #FFFFFF;
-    background-color: #9a0606;
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-    box-sizing: unset;
-}
-
-
-.navbar-collapse{
-    height: 200px;
-    width: 1200px;
-    color: #FFFFFF;
-    background-color: #9a0606;
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-    box-sizing: unset;
-}
-
-.navbar-default {
-    height: 200px;
-    width: 1200px;
-    color: #FFFFFF;
-    background-color: #9a0606;
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-    box-sizing: unset;
-}
-
-nav.navbar-nav.navbar-right{
-    color: #FFFFFF;
-}*/
-
-/*.nav {
-    color: #FFFFFF;
-    background-color: #9a0606;
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-    box-sizing: unset;
-}
-
-.navbar-nav{
-    color: #FFFFFF;
-    background-color: #9a0606;
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-    box-sizing: unset;
-}
-
-.navbar-right{
-    color: #FFFFFF;
-    background-color: #9a0606;
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-    box-sizing: unset;
-}
-
-.a:hover{
-    color: black;
-}*/
-
-/*#navbar-collapse.collapse{
-    height: 200px;
-    width: 1200px;
-    background-color: #9a0606;
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-}
-
-.a.navbar-brand{
-    height: 200px;
-    width: 1200px;
-    background-color: #9a0606;
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-}
-.navbar-default.navbar-collapse{
-    height: 200px;
-    width: 1200px;
-    background-color: #9a0606;
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-}
-
-.navbar-default.navbar-form{
-    height: 200px;
-    width: 1200px;
-    background-color: #9a0606;
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
 }
 
 .nav.navbar.navbar-default{
-    height: 200px;
+    border-left-width: 0px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    margin-bottom: 0px;
+    height: 201px;
     width: 1200px;
+    color: #FFFFFF;
     background-color: #9a0606;
+    border: 0px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
 }
 
-#navbarCollapse{
-    height: 200px;
+/*views page for index of all models*/
+.col-sm-6.col-md-4{
+    height: 480px;
+    width: 420px;
+    background-color: #FFFFFF;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    box-sizing: unset;
+}
+
+/*formatting for details pages*/
+
+.h1{
+    color: #24292E;
+    font-family: 'Spirax', cursive;
+    font-size: 80px;
+    text-align: center;
+    align-content: center;
+}
+
+.accessdetails{
+    height: 400px;
     width: 1200px;
-    background-color: #9a0606;
+    background-color: #FFFFFF;
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
+    box-sizing: unset;
+    color: #24292E;
+    font-family: 'Zilla Slab', serif;
+    font-size: 40px;
+    text-align: center;
+    align-content: center;
 }
-    
-.collapse.navbar-collapse{
-    height: 200px;
+
+.bottomsdetails{
+    height: 400px;
     width: 1200px;
-    background-color: #9a0606;
+    background-color: #FFFFFF;
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
+    box-sizing: unset;
+    color: #24292E;
+    font-family: 'Zilla Slab', serif;
+    font-size: 40px;
+    text-align: center;
+    align-content: center;
 }
-*/
 
-
-
-
-/*#navbarCollapse{
-    height: 200px;
+.dressesdetails{
+    height: 400px;
     width: 1200px;
+    background-color: #FFFFFF;
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
+    box-sizing: unset;
+    color: #24292E;
+    font-family: 'Zilla Slab', serif;
+    font-size: 40px;
+    text-align: center;
+    align-content: center;
 }
 
-
-.nav.navbar-nav{
-    height: 200px;
+.shoesdetails{
+    height: 400px;
     width: 1200px;
+    background-color: #FFFFFF;
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
+    box-sizing: unset;
+    color: #24292E;
+    font-family: 'Zilla Slab', serif;
+    font-size: 40px;
+    text-align: center;
+    align-content: center;
 }
 
-.navbar-default{
-    height: 200px;
+.swimdetails{
+    height: 400px;
     width: 1200px;
+    background-color: #FFFFFF;
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
+    box-sizing: unset;
+    color: #24292E;
+    font-family: 'Zilla Slab', serif;
+    font-size: 40px;
+    text-align: center;
+    align-content: center;
 }
-.navbar-brand{
-    height: 200px;
+
+.topsdetails{
+    height: 400px;
     width: 1200px;
+    background-color: #FFFFFF;
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
+    box-sizing: unset;
+    color: #24292E;
+    font-family: 'Zilla Slab', serif;
+    font-size: 40px;
+    text-align: center;
+    align-content: center;
 }
 
-.thumbnail{
-height: 350px;
-width: 350px;
-}*/
+/*styling for carousel*/
 
 
-/*.accessdetails{
-    align-content:center;
-}*/
-
-/*body {
-    padding-top: 50px;
-    padding-bottom: 20px;
-}*/
-
-/* Set padding to keep content from hitting the edges */
-/*.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
-}*/
-
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-/*.dl-horizontal dt {
-    white-space: normal;
-}*/
-
-/* Set width on the form input elements since they're 100% wide by default */
-/*input,
-select,
-textarea {
-    max-width: 280px;
-}*/
-
-
-/*.btn-primary{
-    background-color: #9a0606;
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-}*/
-
-styling for carousel
-.row{
+.col-md-10.col-center.m-auto{
+    width: 1200px;
     text-align: center;
     align-content: center;
 }
@@ -348,6 +242,8 @@ styling for carousel
     font-size: 13px;
     text-align: center;
     align-content: center;
+    height: 390px;
+    width: 306px;
 }
 
 .carousel .carousel-control {
@@ -399,8 +295,11 @@ styling for carousel
 
 .carousel-indicators li.active {
     background: #555;
-}.footer{
+}
+
+.footer{
     height: 40px;
     color: #FFFFFF;
     background-color:#24292E;
-}
+}
+

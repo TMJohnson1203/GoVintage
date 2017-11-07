@@ -4,63 +4,18 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
+<h1>Shoes Details</h1>
 
-<div>
-    <h4>ShoesTable</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.ShoesName)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.ShoesName)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.ShoesPhoto)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.ShoesPhoto)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.ShoesType)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.ShoesType)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.ShoesColor)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.ShoesColor)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.ShoesSeason)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.ShoesSeason)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.ShoesOccasion)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.ShoesOccasion)
-        </dd>
-
-    </dl>
-</div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ShoesID }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+    <row class="shoesdetails col-sm-6 col-md-4">
+        <h1>@Html.DisplayFor(modelItem => Model.ShoesName)</h1>
+        <div img src="@Url.Content(Model.ShoesPhoto)" width="220" height="400" />
+        <h1>Details</h1>
+        <li>@Html.DisplayNameFor(model => model.ShoesType)  :  @Html.DisplayFor(model => model.ShoesType)</li>
+        <li>@Html.DisplayNameFor(model => model.ShoesColor)  :  @Html.DisplayFor(model => model.ShoesColor)</li>
+        <li> @Html.DisplayNameFor(model => model.ShoesSeason)  :  @Html.DisplayFor(model => model.ShoesSeason)</li>
+        <li> @Html.DisplayNameFor(model => model.ShoesOccasion)  :  @Html.DisplayFor(model => model.ShoesOccasion)</li>
+    </row>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.ShoesID }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>

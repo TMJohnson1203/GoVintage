@@ -3,12 +3,12 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Accessory Details</h2>
+<h1>Accessory Details</h1>
 
 <row class="accessdetails col-sm-6 col-md-4">
-                <h3>@Html.DisplayFor(modelItem => Model.AccessName)</h3>
-        <div img src=@Url.Content(Model.AccessPhoto) width="220" height="400" />   
-        <h3>Details</h3>
+                <h1>@Html.DisplayFor(modelItem => Model.AccessName)</h1>
+        <div img src="@Url.Content(Model.AccessPhoto)" width="220" height="400" />   
+        <h1>Details</h1>
             <li>@Html.DisplayNameFor(model => model.AccessType)  :  @Html.DisplayFor(model => model.AccessType)</li>
             <li>@Html.DisplayNameFor(model => model.AccessColor)  :  @Html.DisplayFor(model => model.AccessColor)</li>
            <li> @Html.DisplayNameFor(model => model.AccessSeason)  :  @Html.DisplayFor(model => model.AccessSeason)</li>
@@ -19,98 +19,4 @@
                 @Html.ActionLink("Back to List", "Index")
             </p>
 
-            @*<dl class="dl-horizontal">
-                     <dt>
-                         @Html.DisplayNameFor(model => model.AccessName)
-                     </dt>
-
-                     <dd>
-                         @Html.DisplayFor(model = model.AccessName)
-                     </dd>
-
-                     <dt>
-                         @Html.DisplayNameFor(model => model.AccessPhoto)
-                     </dt>
-
-                     <dd>
-                         @Html.DisplayFor(model => model.AccessPhoto)
-                     </dd>
-
-                     <dt>
-                         @Html.DisplayNameFor(model => model.AccessType)
-                     </dt>
-
-                     <dd>
-                         @Html.DisplayFor(model => model.AccessType)
-                     </dd>
-
-                     <dt>
-                         @Html.DisplayNameFor(model => model.AccessColor)
-                     </dt>
-
-                     <dd>
-                         @Html.DisplayFor(model => model.AccessColor)
-                     </dd>
-
-                     <dt>
-                         @Html.DisplayNameFor(model => model.AccessSeason)
-                     </dt>
-
-                     <dd>
-                         @Html.DisplayFor(model => model.AccessSeason)
-                     </dd>
-
-                     <dt>
-                         @Html.DisplayNameFor(model => model.AccessOccasion)
-                     </dt>
-
-                     <dd>
-                         @Html.DisplayFor(model => model.AccessOccasion)
-                     </dd>
-
-                     </dl>
-                 </div>
-                 <p>
-                     @Html.ActionLink("Edit", "Edit", new { id = Model.AccessID }) |
-                     @Html.ActionLink("Back to List", "Index")
-                 </p>*
-                <dl class="dl-horizontal">
-                                 <dt>
-                                 </dt>
-
-                                 <dd>
-                                 </dd>
-
-                                 <dt>
-                                 </dt>
-
-                                 <dd>
-                                 </dd>
-
-                                 <dt>
-                                 </dt>
-
-                                 <dd>
-                                 </dd>
-
-                                 <dt>
-                                 </dt>
-
-                                 <dd>
-                                 </dd>
-
-                                 <dt>
-                                 </dt>
-
-                                 <dd>
-                                 </dd>
-
-                                 <dt>
-                                 </dt>
-
-                                 <dd>
-                                 </dd>
-
-                             </dl>
-                             <p>
-                             </p>*@
+         
