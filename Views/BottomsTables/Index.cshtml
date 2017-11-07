@@ -16,10 +16,9 @@
         <div class="col-sm-6 col-md-4">
             <div class="thumbnail">
                 <div class="caption">
-                    <h3> @Html.DisplayNameFor(model => model.BottomsName)</h3>
-                    <img src="@Html.DisplayFor(modelItem => item.BottomsPhoto)" />
-                    <p>@Html.DisplayNameFor(model => model.BottomsPhoto)</p>
-                </div>
+                        <h3>@Html.DisplayFor(modelItem => item.BottomsName)</h3>
+                        <img src="@Url.Content(item.BottomsPhoto)" />  
+                    </div>
 
                 @Html.ActionLink("Edit", "Edit", new { id = item.BottomsID }) |
                 @Html.ActionLink("Details", "Details", new { id = item.BottomsID }) |

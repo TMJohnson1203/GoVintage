@@ -16,9 +16,8 @@
         <div class="col-sm-6 col-md-4">
             <div class="thumbnail">
                 <div class="caption">
-                    <h3> @Html.DisplayNameFor(model => model.ShoesName)</h3>
-                    <img src="@Html.DisplayFor(modelItem => item.ShoesPhoto)" />
-                    <p>@Html.DisplayNameFor(model => model.ShoesPhoto)</p>
+                    <h3>@Html.DisplayFor(modelItem => item.ShoesName)</h3>
+                    <img src="@Url.Content(item.ShoesPhoto)" />  
                 </div>
 
                 @Html.ActionLink("Edit", "Edit", new { id = item.ShoesID }) |
@@ -29,56 +28,3 @@
         </div>
     }
 </div>
-
-@*<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.ShoesName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ShoesPhoto)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ShoesType)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ShoesColor)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ShoesSeason)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ShoesOccasion)
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.ShoesName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ShoesPhoto)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ShoesType)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ShoesColor)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ShoesSeason)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ShoesOccasion)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ShoesID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ShoesID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ShoesID })
-        </td>
-    </tr>
-}
-
-</table>*@
